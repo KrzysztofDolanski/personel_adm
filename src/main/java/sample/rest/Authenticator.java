@@ -1,10 +1,11 @@
 package sample.rest;
 
-import sample.dto.UserCredentialsDTO;
+import sample.dto.OperatorCredentialsDto;
+
 
 public interface Authenticator
-//        extends JpaRepository<UserCredentialsDTO, Long>
+
 {
 
-    void authenticate(UserCredentialsDTO userCredentialsDTO, AuthenticationResultHandler authenticationResultHandler);
+    void authenticate(OperatorCredentialsDto operatorCredentialsDTO, AuthenticationResultHandler authenticationResultHandler);
 }
